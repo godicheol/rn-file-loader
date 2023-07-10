@@ -1,0 +1,29 @@
+{
+  "name": "rn-file-loader",
+  "version": "1.0.0",
+  "description": "File load with ReactNative",
+  "homepage": "https://github.com/godicheol/rn-file-loader.git",
+  "main": "index.js",
+  "scripts": {
+    "unlink": "rimraf .git",
+    "build": "npm pack"
+  },
+  "author": "godicheol <godicheol@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "javascript",
+    "react-native"
+  ],
+  "devDependencies": {
+    "mkdirp": "^2.1.5",
+    "react": "*",
+    "react-native": "*",
+    "rimraf": "^4.4.0"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "react-native-document-picker": "*"
+  },
+  "bundleDependencies": []
+}
