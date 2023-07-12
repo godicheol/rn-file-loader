@@ -44,7 +44,7 @@ function setPickerTypes(arr) {
 
 let fl = {};
 
-fl.pick = async function(options) {
+fl.load = async function(options) {
   if (!IS_SUPPORTED) {
     throw new Error("Operating system not supported.");
   }
@@ -68,13 +68,13 @@ fl.pick = async function(options) {
 
   const result = [];
   for (let i = 0; i < picked.length; i++) {
-    const {name, size, type, fileCopyUri} = picked[i];
+    const {name, size, type, fileCopyUri, uri} = picked[i];
 
     result.push({
       name: name,
       size: size,
       type: type,
-      path: decodeURI(fileCopyUri.replace(/^.*:\/\//, "")),
+      path: decodeURI(fileCopyUri.replace(/^.*:\/\//, ""))
     });
   }
 
